@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza o conteúdo no container */
+            justify-content: center;
+            margin: 10px;
+            width: 30%; /* Ajustado para um tamanho maior do container */
+            height: 50%;
+        }
+
+        label {
+            display: block;
+            text-align: left; /* Garante que o texto do label fique à esquerda */
+        }
+
+        input {
+            width: 100%; /* Garante que o input ocupe toda a largura disponível */
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div style="background-color: blue;">
+
+            <div class="form-item">
+                <label for="usuario">Usuario</label>
+                <input id="inputUsuario" type="text" class="text" placeholder="Usuario">
+            </div>
+
+            <div class="form-item">
+                <label for="senha">Senha</label>
+                <input id="inputSenha" type="password" name="senha" placeholder="Senha">
+            </div>
+
+            <input type="button" value="Acessar">
+            <input type="button" value="Voltar">
+
+        </div>        
+
+    </div>
+    
+</body>
+</html>

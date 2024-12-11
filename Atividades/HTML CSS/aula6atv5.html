@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries Example</title>
+  <style>
+    /* Estilo padrão para o parágrafo e botão */
+    p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2a5298;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Media query para dispositivos com largura menor que 600px */
+    @media (max-width: 600px) {
+      p {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+      }
+
+      button {
+        background-color: #f39c12; /* Altera a cor do botão */
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>Este é um exemplo de parágrafo que ajusta seu tamanho de fonte em dispositivos menores.</p>
+  <button>Clique Aqui</button>
+</body>
+</html>

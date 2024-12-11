@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Grid</title>
+    <style>
+        /* Estilos gerais do body */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Definindo o grid do layout */
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr; /* Sidebar de 200px e main ocupa o restante */
+            grid-template-rows: auto 1fr auto; /* Header ocupa o espaço automático, o meio preenche o restante, footer é automático */
+            gap: 10px; /* Espaçamento entre os blocos */
+            height: 100vh; /* Ocupa toda a altura da tela */
+        }
+
+        /* Estilo para o header */
+        header {
+            grid-column: span 2; /* O header ocupa as 2 colunas */
+            background-color: #4CAF50; /* Cor verde para o header */
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Estilo para a sidebar */
+        aside {
+            background-color: #f4a261; /* Cor laranja para a sidebar */
+            padding: 20px;
+        }
+
+        /* Estilo para o main */
+        main {
+            background-color: #2a9d8f; /* Cor verde-azulada para o main */
+            padding: 20px;
+        }
+
+        /* Estilo para o footer */
+        footer {
+            grid-column: span 2; /* O footer ocupa as 2 colunas */
+            background-color: #e76f51; /* Cor vermelha para o footer */
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <!-- Sidebar -->
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Conteúdo da Sidebar.</p>
+        </aside>
+
+        <!-- Main -->
+        <main>
+            <h2>Main Content</h2>
+            <p>Conteúdo principal do site.</p>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+
+</body>
+</html>

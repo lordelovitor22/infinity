@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Registro</title>
+    <style>
+
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: #f7f7f7; 
+            display: flex; /* Flexbox para centralizar o conteúdo */
+            justify-content: center; /* Centraliza o formulário horizontalmente */
+            align-items: center; /* Centraliza o formulário verticalmente */
+            height: 100vh; /* Define a altura da tela inteira */
+            margin: 0; 
+        }
+
+        /* Estilo para o formulário */
+        form {
+            background-color: #fff; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            width: 300px; 
+        }
+
+        /* Estilo para os campos do formulário */
+        input[type="text"], input[type="email"], input[type="date"], textarea {
+            width: 100%; /* ocupar 100% tamanho do form */
+            padding: 10px; 
+            margin-bottom: 15px;
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+
+        /* Estilo para o botão de envio */
+        button[type="submit"] {
+            width: 100%; /* ocupar 100% tamanho do form */
+            padding: 10px; 
+            background-color: #2a5298; 
+            color: white; 
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Efeito no botão ao passar o mouse */
+        button[type="submit"]:hover {
+            background-color: #1e3d68; 
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="POST">
+
+        <h2>Registro de Informações</h2>
+        
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        
+        <input type="date" name="data_nascimento" required>
+        
+        <input type="email" name="email" placeholder="Email" required>
+        
+        <textarea name="observacoes" rows="4" placeholder="Observações" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

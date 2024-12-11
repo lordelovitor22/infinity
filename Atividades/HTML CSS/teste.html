@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login App</title>
+
+    <style>
+
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/vetores-gratis/fundo-de-curva-azul_53876-113112.jpg?t=st=1732628362~exp=1732631962~hmac=d24bae40141c3bde0d6cba89849435bacd8fd7565d0f087386a2105324e88f6c&w=740') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contêiner principal */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Título e imagem */
+        .container h3 {
+            margin-bottom: 20px;
+            color: #2a5298;
+        }
+
+        .container img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Formulário */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .form-options a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .form-options a:hover {
+            text-decoration: underline;
+        }
+
+        /* Botões */
+        .form-buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .form-buttons input[type="button"] {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2a5298;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-buttons input[type="button"]:hover {
+            background-color: #1f3d7a;
+        }
+
+        /* Media Query para dispositivos móveis */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }        
+    </style>
+</head>
+<body>
+
+    <!-- Div Principal -->
+    <div class="container">
+        <h3>Nome App</h3>
+
+        <img width="100" src="https://media.licdn.com/dms/image/v2/D4D03AQEDhZ9wE8O9vQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1666034835418?e=2147483647&v=beta&t=39IPIgc079Cfbl4V2AP-RByb_iH6hn4hwBGtzBALCL8"
+        alt="Imagem de Vitor, sorrindo, em preto e branco">
+
+        <!-- Formulário de login -->
+        <form action="submit">
+            <div class="form-group">
+                <label for="usuario">Usuário</label>
+                <input id="inputUsuario" type="text" name="usuario">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input id="inputSenha" type="password" name="senha">
+            </div>
+
+            <div class="form-options">
+                <div>
+                    <input type="checkbox" name="lembreme" id="lembreme">
+                    <label for="lembreme">Lembre-me</label>
+                </div>
+                <a href="#">Cadastrar</a>
+            </div>
+
+            <div class="form-buttons">
+                <input type="button" value="Acessar">
+                <input type="button" value="Voltar">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

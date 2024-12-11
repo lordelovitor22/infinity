@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsivo</title>
+  <style>
+    /* Estilo geral */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #2a5298;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2a5298;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Estilo para dispositivos móveis */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column; /* Menu em coluna */
+      }
+
+      main {
+        font-size: 14px; /* Reduz tamanho do texto */
+      }
+    }
+
+    /* Estilo para tablets */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      nav {
+        flex-direction: row; /* Menu em linha */
+      }
+
+      main {
+        font-size: 16px; /* Tamanho médio do texto */
+      }
+    }
+
+    /* Estilo para desktops */
+    @media (min-width: 1025px) {
+      nav {
+        justify-content: space-between; /* Espaço entre os links */
+      }
+
+      main {
+        font-size: 18px; /* Aumenta o tamanho do texto */
+        max-width: 800px;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao Layout Responsivo</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">Sobre</a>
+    <a href="#services">Serviços</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <main>
+    <h2>Conteúdo Principal</h2>
+    <p>Este é o conteúdo principal da página. Ele se ajusta para dispositivos móveis, tablets e desktops, fornecendo uma experiência de visualização otimizada.</p>
+  </main>
+
+  <footer>
+    <p>© 2024 Layout Responsivo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

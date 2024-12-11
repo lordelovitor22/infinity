@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login App</title>
+
+    <style>
+
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/vetores-gratis/fundo-de-curva-azul_53876-113112.jpg?t=st=1732628362~exp=1732631962~hmac=d24bae40141c3bde0d6cba89849435bacd8fd7565d0f087386a2105324e88f6c&w=740') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contêiner principal */
+        .container {
+            background-color: rgba(198, 220, 245, 0.8);
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Media Query para dispositivos móveis (até 600px) */
+        @media (max-width: 600px) {
+            .container {
+                background-color: rgba(198, 220, 245, 0.5); /* Alteração para dispositivos móveis */
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* Media Query para tablets (601px a 1024px) */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .container {
+                background-color: rgba(150, 180, 202, 0.8); /* Azul claro */
+                width: 40%; /* Ajusta largura para tablets */
+            }
+        }
+
+        /* Media Query para laptops (1025px a 1440px) */
+        @media (min-width: 1025px) and (max-width: 1440px) {
+            .container {
+                background-color: rgba(200, 230, 255, 0.8); /* Azul mais intenso */
+                width: 50%; /* Ajusta largura para laptops */
+            }
+        }
+
+        /* Media Query para laptops grandes (1441px a 2560px) */
+        @media (min-width: 1441px) and (max-width: 2560px) {
+            .container {
+                background-color: rgba(122, 177, 240, 0.8); /* Azul mais escuro */
+                width: 60%; /* Ajusta largura para laptops grandes */
+            }
+        }
+
+        /* Media Query para telas 4k (2561px e acima) */
+        @media (min-width: 2561px) {
+            .container {
+                background-color: rgba(97, 130, 172, 0.8); /* Azul escuro */
+                width: 70%; /* Ajusta largura para telas 4k */
+            }
+        }
+ 
+
+        /* Título e imagem */
+        h3 {
+            margin-bottom: 20px;
+            color: #2a5298;
+        }
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Formulário */
+        .div_group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label{
+            color: #2a5298;;
+        }
+
+        .div_group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        /* Estilos gerais para inputs */
+        .div_group input {
+            width: 100%; /* O input se ajusta ao tamanho do container */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+            margin: 0 auto; /* Centraliza o input */
+            display: block; /* Garante que seja tratado como bloco */
+        }        
+
+        .div_options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .div_options a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .div_options a:hover {
+            text-decoration: underline;
+        }
+
+        /* Botões */
+        .div_buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .div_buttons input{
+            width: 50%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            background-color: #2a5298;
+            color: white;
+            cursor: pointer;
+        }
+
+        .div_buttons input:hover {
+            background-color: #1f3d7a;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Div Principal -->
+    <div class="container">
+        <h3>Nome App</h3>
+
+        <img width="100" src="https://media.licdn.com/dms/image/v2/D4D03AQEDhZ9wE8O9vQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1666034835418?e=2147483647&v=beta&t=39IPIgc079Cfbl4V2AP-RByb_iH6hn4hwBGtzBALCL8"
+        alt="Imagem de Vitor, sorrindo, em preto e branco">
+
+        <!-- Formulário de login -->
+        <form action="submit">
+            <div class="div_group">
+                <label for="usuario">Usuário</label>
+                <input id="inputUsuario" type="text" name="usuario">
+            </div>
+
+            <div class="div_group">
+                <label for="senha">Senha</label>
+                <input id="inputSenha" type="password" name="senha">
+            </div>
+
+            <div class="div_options">
+                <div>
+                    <input type="checkbox" name="lembreme" id="lembreme">
+                    <label for="lembreme">Lembre-me</label>
+                </div>
+                <a href="#">Cadastrar</a>
+            </div>
+
+            <div class="div_buttons">
+                <input type="button" value="Acessar">
+                <input type="button" value="Voltar">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

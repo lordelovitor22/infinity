@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Diárias</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            color: #333333;
+        }
+    
+        header {
+            background-color: #005f99;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            position: fixed; /* Fixa o cabeçalho no topo da página */
+            top: 0;
+            width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+            z-index: 1; /* Mantém o cabeçalho abaixo da imagem quando necessário */
+        }
+        
+        nav {
+            background-color: #0077b6;
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+        }
+    
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        nav a:hover {
+            text-decoration: underline;
+        }
+    
+        .img_cabecalho {
+            margin-top: 80px; /* Ajuste para a altura do cabeçalho */
+            width: 100%;
+            height: 800px; /* Altura suficiente para exigir rolagem */
+            object-fit: cover; /* Ajusta a imagem sem distorções */
+            z-index: 2; /* Faz com que a imagem sobreponha o cabeçalho ao rolar */
+            position: relative; /* Para interação do z-index */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+        }
+    
+        .content {
+            flex: 3;
+            margin-right: 20px;
+        }
+    
+        .content .block {
+            background-color: #e3f2fd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px lightgray;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    
+        .content .block .left-content {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        .content .block h3 {
+            margin-top: 0;
+            color: navy;
+        }
+    
+        .content .block p {
+            margin-bottom: 10px;
+        }
+    
+        .content .block .to-top {
+            color: #005f99;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    
+        .content .block .to-top:hover {
+            text-decoration: underline;
+        }
+
+        .content .block img {
+            max-width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto;
+            border-radius: 8px;
+        }
+    
+        aside {
+            flex: 1;
+            background-color: #cce7ff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px lightgray;
+        }
+    
+        aside h4 {
+            margin-top: 0;
+            color: #005f99;
+        }
+    
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        aside ul li {
+            margin-bottom: 10px;
+        }
+    
+        aside ul li a {
+            color: #005f99;
+            text-decoration: none;
+        }
+    
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+    
+        footer {
+            background-color: #005f99;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            position: relative;
+        }
+    
+        footer .whatsapp-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    
+        footer .whatsapp-btn:hover {
+            background-color: forestgreen;
+        }
+    </style>
+        
+</head>
+<body>
+
+    <header>
+        Notícias Diárias
+        <nav>
+            <a href="">Home</a>
+            <a href="#saude">Saúde</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#politica">Política</a>
+            <a href="#educacao">Educação</a>
+            <a href="#economia">Economia</a>
+            <a href="#esporte">Esportes</a>
+            <a href="#entretenimento">Entretenimento</a>
+            <a href="#footer">Contato</a>
+        </nav>
+    </header>
+
+    <img class="img_cabecalho" src="https://via.placeholder.com/1920x1080" alt="Imagem com efeito de sobreposição">
+
+    <div class="container">
+
+        <main class="content">
+
+            <div id="saude" class="block">
+                <div class="left-content">
+                    <h3>Saúde</h3>
+                    <p>Prevenção de Doenças Cardiovasculares: A Importância da Alimentação e Exercícios</p>
+                    <p>As doenças cardiovasculares são uma das principais causas de morte no mundo. A boa notícia é que muitas dessas condições podem ser prevenidas com hábitos   saudáveis. A alimentação balanceada, rica em frutas, vegetais e grãos integrais, associada à prática regular de exercícios físicos, desempenha um papel fundamental na manutenção da saúde cardiovascular. Evitar o tabagismo e controlar o estresse também são medidas essenciais. Consultar um médico regularmente e realizar exames de rotina são atitudes importantes para garantir um coração saudável ao longo dos anos.
+                    </p>
+                    <a href="#top" class="to-top">Topo</a>
+                </div>
+                <img src="https://images.pexels.com/photos/8352120/pexels-photo-8352120.jpeg" alt="Imagem de saúde">
+            </div>
+
+            <div id="tecnologia" class="block">
+                <div class="left-content">
+                    <h3>Tecnologia</h3>
+                    <p>Título: Tecnologia</p>
+                    <p>Matéria: Tecnologia</p>
+                    <a href="#top" class="to-top">Topo</a>
+                </div>
+                <img src="https://via.placeholder.com/150" alt="Imagem de tecnologia">
+            </div>
+
+            <div id="politica" class="block">
+                <div class="left-content">
+                    <h3>Política</h3>
+                    <p>Título: Reforma Tributária é Aprovada.</p>
+                    <p>Matéria: A reforma tributária foi aprovada na Câmara com ampla maioria.</p>
+                    <a href="#top" class="to-top">Topo</a>
+                </div>
+                <img src="https://via.placeholder.com/150" alt="Imagem de política">
+            </div>
+
+            <div id="educacao" class="block">
+                <div class="left-content">
+                    <h3>Educação</h3>
+                    <p>Título: Educação</p>
+                    <p>Matéria: Educação</p>
+                    <a href="#top" class="to-top">Topo</a>
+                </div>
+                <img src="https://via.placeholder.com/150" alt="Imagem de educação">
+            </div>
+
+            <div id="economia" class="block">
+                <div class="left-content">
+                    <h3>Economia</h3>
+                    <p>Título: Economia</p>
+                    <p>Matéria: Economia</p>
+                    <a href="#top" class="to-top">Topo</a>
+                </div>
+                <img src="https://via.placeholder.com/150" alt="Imagem de economia">
+            </div>
+
+            <div id="esporte" class="block">
+                <div class="left-content">
+                    <h3>Esportes</h3>
+                    <p>Título: Final do Campeonato Brasileiro.</p>
+                    <p>Matéria: O jogo final acontece no próximo domingo.</p>
+                    <a href="#top" class="to-top">Topo</a>
+                </div>
+                <img src="https://via.placeholder.com/150" alt="Imagem de esportes">
+            </div>
+
+            <div id="entretenimento" class="block">
+                <div class="left-content">
+                    <h3>Entretenimento</h3>
+                    <p>Título: Entretenimento</p>
+                    <p>Matéria: Entretenimento</p>
+                    <a href="#top" class="to-top">Topo</a>
+                </div>
+                <img src="https://via.placeholder.com/150" alt="Imagem de entretenimento">
+            </div>
+
+        </main>
+
+        <aside>
+            <h4>Últimas Notícias</h4>
+            <ul>
+                <li><a href="#">Nova tecnologia é lançada.</a></li>
+                <li><a href="#">Taxas de juros em queda.</a></li>
+                <li><a href="#">Campeonato regional começa.</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <footer id="footer">
+        <p>© 2024 Notícias Diárias. Todos os direitos reservados.</p>
+        <p>Contato: (71) 999959970</p>
+        <a href="https://wa.me/5571999959970" class="whatsapp-btn" target="_blank">Fale conosco no WhatsApp</a>
+    </footer>
+
+</body>
+</html>

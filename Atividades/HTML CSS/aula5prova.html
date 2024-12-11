@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alinhamento</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh; /* Tamanho do body  */
+            display: flex; 
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        /* Estilo para o contêiner principal */
+        .container {
+            display: flex; 
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            background-color: #c8cbf7; 
+            border-radius: 10px;
+        }
+
+        /* Estilo para as caixas internas */
+        .box {
+            width: 200px; 
+            height: 200px;
+            background-color: #2a5298;
+            margin: 20px; /* Espaço entre as caixas */
+            display: flex; 
+            justify-content: center; /* Centraliza o conteúdo da caixa horizontalmente */
+            align-items: center; /* Centraliza o conteúdo da caixa verticalmente */
+            color: white; 
+            font-size: 16px; 
+            border-radius: 10px; /* Cantos arredondados para as caixas */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contêiner principal que usa Flexbox -->
+    <div class="container">
+
+        <!-- Três caixas internas -->
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+
+    </div>
+
+</body>
+</html>

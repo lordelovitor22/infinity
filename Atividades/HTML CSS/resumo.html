@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo das Tags HTML</title>
+</head>
+<body>
+    <h1>Resumo das Tags HTML</h1>
+    
+    <h2>Estrutura Básica</h2>
+    <ul>
+        <li><strong>&lt;!DOCTYPE html&gt;</strong> - Define o tipo de documento como HTML5. (Não tem fechamento)</li>
+        <li><strong>&lt;html&gt;...&lt;/html&gt;</strong> - Elemento raiz do documento.</li>
+        <li><strong>&lt;head&gt;...&lt;/head&gt;</strong> - Contém metadados, como título e links para CSS.</li>
+        <li><strong>&lt;title&gt;...&lt;/title&gt;</strong> - Define o título que aparece na aba do navegador.</li>
+        <li><strong>&lt;body&gt;...&lt;/body&gt;</strong> - Contém o conteúdo visível da página.</li>
+    </ul>
+
+    <h2>Tags de Texto e Estrutura</h2>
+    <ul>
+        <li><strong>&lt;h1&gt;...&lt;/h1&gt; a &lt;h6&gt;...&lt;/h6&gt;</strong> - Cabeçalhos, do maior (&lt;h1&gt;) ao menor (&lt;h6&gt;).</li>
+        <li><strong>&lt;p&gt;...&lt;/p&gt;</strong> - Define um parágrafo.</li>
+        <li><strong>&lt;br&gt;</strong> - Quebra de linha. (Não tem fechamento)</li>
+        <li><strong>&lt;hr&gt;</strong> - Linha horizontal para separar conteúdo. (Não tem fechamento)</li>
+    </ul>
+
+    <h2>Formatação de Texto</h2>
+    <ul>
+        <li><strong>&lt;strong&gt;...&lt;/strong&gt;</strong> - Destaca texto em negrito (importante).</li>
+        <li><strong>&lt;em&gt;...&lt;/em&gt;</strong> - Destaca texto em itálico (ênfase).</li>
+        <li><strong>&lt;b&gt;...&lt;/b&gt;</strong> - Negrito.</li>
+        <li><strong>&lt;i&gt;...&lt;/i&gt;</strong> - Itálico.</li>
+    </ul>
+
+    <h2>Links e Imagens</h2>
+    <ul>
+        <li>
+            <strong>&lt;a&gt;...&lt;/a&gt;</strong> - Define um link. 
+            <ul>
+                <li><strong>href</strong>: Especifica a URL de destino.</li>
+                <li><strong>target</strong>: Define onde abrir o link (_blank abre em nova aba).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>&lt;img&gt;</strong> - Insere uma imagem. (Não tem fechamento)
+            <ul>
+                <li><strong>src</strong>: URL da imagem.</li>
+                <li><strong>alt</strong>: Texto alternativo que descreve a imagem.</li>
+                <li><strong>width</strong> e <strong>height</strong>: Definem o tamanho da imagem.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Listas</h2>
+    <ul>
+        <li><strong>&lt;ul&gt;...&lt;/ul&gt;</strong> - Lista não ordenada.</li>
+        <li><strong>&lt;ol&gt;...&lt;/ol&gt;</strong> - Lista ordenada.</li>
+        <li><strong>&lt;li&gt;...&lt;/li&gt;</strong> - Item de lista.</li>
+    </ul>
+
+    <h2>Tabelas</h2>
+    <ul>
+        <li><strong>&lt;table&gt;...&lt;/table&gt;</strong> - Define uma tabela.</li>
+        <li><strong>&lt;tr&gt;...&lt;/tr&gt;</strong> - Define uma linha na tabela.</li>
+        <li><strong>&lt;th&gt;...&lt;/th&gt;</strong> - Define uma célula de cabeçalho.</li>
+        <li><strong>&lt;td&gt;...&lt;/td&gt;</strong> - Define uma célula de dados.</li>
+    </ul>
+
+    <h2>Elementos Semânticos</h2>
+    <ul>
+        <li><strong>&lt;header&gt;...&lt;/header&gt;</strong> - Representa o cabeçalho de uma página ou seção.</li>
+        <li><strong>&lt;nav&gt;...&lt;/nav&gt;</strong> - Define uma área de navegação.</li>
+        <li><strong>&lt;main&gt;...&lt;/main&gt;</strong> - Representa o conteúdo principal da página.</li>
+        <li><strong>&lt;section&gt;...&lt;/section&gt;</strong> - Define uma seção temática.</li>
+        <li><strong>&lt;article&gt;...&lt;/article&gt;</strong> - Representa um conteúdo independente.</li>
+        <li><strong>&lt;aside&gt;...&lt;/aside&gt;</strong> - Define conteúdo relacionado, como barras laterais.</li>
+        <li><strong>&lt;footer&gt;...&lt;/footer&gt;</strong> - Representa o rodapé da página ou seção.</li>
+    </ul>
+
+    <h2>Elementos Não-Semânticos</h2>
+    <ul>
+        <li><strong>&lt;div&gt;...&lt;/div&gt;</strong> - Define uma divisão genérica, sem significado específico.</li>
+        <li><strong>&lt;span&gt;...&lt;/span&gt;</strong> - Define uma pequena área de texto, usada para estilização ou agrupamento.</li>
+    </ul>
+
+    <h2>Criação de Formulários</h2>
+    <ul>
+        <li><strong>&lt;form&gt;...&lt;/form&gt;</strong> - Define um formulário para entrada de dados.</li>
+        <li><strong>&lt;input&gt;</strong> - Campo genérico de entrada de dados. (Não tem fechamento)</li>
+        <ul>
+            <li><strong>type="text"</strong>: Campo para entradas curtas.</li>
+            <li><strong>type="password"</strong>: Campo com conteúdo oculto para senhas.</li>
+            <li><strong>type="email"</strong>: Campo que valida e-mails.</li>
+            <li><strong>type="url"</strong>: Campo que valida URLs.</li>
+            <li><strong>type="search"</strong>: Campo estilizado para pesquisas.</li>
+            <li><strong>type="tel"</strong>: Campo para números de telefone.</li>
+            <li><strong>type="checkbox"</strong>: Caixa de seleção para múltiplas escolhas.</li>
+            <li><strong>type="radio"</strong>: Botão de opção para uma escolha em um grupo.</li>
+            <li><strong>type="range"</strong>: Controle deslizante para selecionar valores dentro de um intervalo.</li>
+            <li><strong>type="color"</strong>: Seletor de cor.</li>
+            <li><strong>type="date"</strong>: Seletor de data.</li>
+            <li><strong>type="datetime-local"</strong>: Seletor de data e hora sem fuso horário.</li>
+            <li><strong>type="month"</strong>: Seletor de mês e ano.</li>
+            <li><strong>type="week"</strong>: Seletor de semana.</li>
+            <li><strong>type="time"</strong>: Seletor de hora.</li>
+            <li><strong>type="number"</strong>: Campo para números com botões de incremento e decremento.</li>
+            <li><strong>type="file"</strong>: Permite que o usuário selecione um ou mais arquivos para upload.</li>
+            <li><strong>type="submit"</strong>: Envia o formulário.</li>
+            <li><strong>type="reset"</strong>: Redefine os campos do formulário.</li>
+            <li><strong>type="button"</strong>: Botão genérico para ações personalizadas com JavaScript.</li>
+        </ul>
+        <li><strong>&lt;textarea&gt;...&lt;/textarea&gt;</strong> - Área de texto para entradas mais longas.</li>
+        <li>
+            <strong>&lt;select&gt;...&lt;/select&gt;</strong> - Cria um menu suspenso.
+            <ul>
+                <li><strong>&lt;option&gt;...&lt;/option&gt;</strong> - Define uma opção dentro do menu.</li>
+            </ul>
+        </li>
+        <li><strong>&lt;button&gt;...&lt;/button&gt;</strong> - Botões com funções específicas, como enviar (<strong>type="submit"</strong>) ou redefinir (<strong>type="reset"</strong>).</li>
+    </ul>
+
+</body>
+</html>
